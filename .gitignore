@@ -1,4 +1,24 @@
+# Python cache / build artifacts
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.log
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
 .env
 *.env
+
+# Editors / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
