@@ -9,3 +9,6 @@ openai==0.28.1
 # Environment variable management
 # Loads .env file automatically
 python-dotenv>=1.0.0
+
+# Testing
+pytest>=8.0.0,<9.0.0
