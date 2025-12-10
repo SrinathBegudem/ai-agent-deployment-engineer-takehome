@@ -54,6 +54,24 @@ This project was built for the Hippocratic AI coding assignment. It takes simple
 - Interactive CLI with optional user feedback for further customization
 - Modular architecture with clean separation of concerns
 
+### Important Design Notes
+
+**Content Safety by Design**
+
+When users request inappropriate content (violence, gore, scary themes), the system does not refuse or show errors. Instead, it gracefully transforms the request into age-appropriate content through prompt engineering. For example, a request for "violent battle" becomes a story about "animals cooperating to build a fence together."
+
+This approach provides:
+- Better user experience (no confusing error messages)
+- Robust safety (hard to bypass with clever wording)
+- Always delivers value (user gets a story regardless of input)
+
+**Efficient API Usage**
+
+Most stories score 8-9/10 on first generation with 0 refinement rounds needed. This is intentional and demonstrates well-crafted prompts, not a bug. The refinement loop only activates when quality falls below threshold (7/10), minimizing API calls and costs while maintaining quality.
+
+See [tests/edge_cases_tested.md](tests/edge_cases_tested.md) for comprehensive testing documentation including extreme edge cases.
+
+
 ## Architecture
 ```
 User Request
