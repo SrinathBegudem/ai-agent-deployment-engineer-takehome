@@ -1,3 +1,11 @@
-# This version supports openai.ChatCompletion.create as used in main.py
+# Bedtime Story Generator Dependencies
+# =====================================
+
+# OpenAI API client
+# Using version 0.28.1 for compatibility with ChatCompletion.create() API
+# This version uses the older API format required by the assignment
 openai==0.28.1
-python-dotenv
+
+# Environment variable management
+# Loads .env file automatically
+python-dotenv>=1.0.0
