@@ -6,8 +6,8 @@ A Python application that generates age-appropriate bedtime stories for children
 
 ### Step 1: Clone and Navigate
 ```bash
-git clone https://github.com/YOUR_USERNAME/bedtime-story-generator.git
-cd bedtime-story-generator
+git clone https://github.com/SrinathBegudem/ai-agent-deployment-engineer-takehome.git
+cd ai-agent-deployment-engineer-takehome
 ```
 
 ### Step 2: Create Virtual Environment
